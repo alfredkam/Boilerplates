@@ -4,13 +4,13 @@ a stock version of model view presenter web framework
 
 this frameworks is compose of 
 
-bootstrap
-require js
-jquery
-backbone js
-underscore
-mustache
-yepnope
+bootstrap<br>
+require js<Br>
+jquery<Br>
+backbone js<br>
+underscore<br>
+mustache<Br>
+yepnope<Br>
 
 
 Note
