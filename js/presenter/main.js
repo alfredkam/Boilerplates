@@ -9,6 +9,7 @@
 			presenter : '../js/presenter',
 			tpl : '../templates',
 		},
+		//set up the dependecies here
 		shim : {
 			'jquery-ui' : {
 				deps : ['jquery'],
@@ -35,6 +36,9 @@
 			'bootbox' : {
 				deps : ['jquery', 'bootstrap'],	
 			},
+			'jquery-notify' : {
+				deps : ['jquery', 'jquery-ui'],
+			},
 		},
 	});
 
@@ -44,10 +48,12 @@
 		'backbone',
 		'mustache',
 		'presenter/router',
+		'bootstrap',
+	//	'bootbox',           			/* enable these lines if to use them */
+	//	'jquery-notify',			/* enable these lines if to use them */
 	],function($, _, Backbone, Mustache, Router) {
 		Router.init();
 	});
-	require(['bootstrap']);
 	/* using yepnope to load additional scripts if it is a tablet */
 	/*
 	require([
