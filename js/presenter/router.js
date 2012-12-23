@@ -1,3 +1,4 @@
+//this script defines the routes set up
 (function() {
 	define([
 		'jquery/jquery',
@@ -5,8 +6,10 @@
 		'backbone/backbone',
 		'mustache/mustache',
 		'views/site.view',
-	],function($, _, Backbone, Mustache, Views) {
+		'text!../tpl/footer.mustache',
+	],function($, _, Backbone, Mustache, Views, tpl) {
 		var Routes = Backbone.Router.extend({
+			//routes setup
 			routes : {
 				'!/about' : 'about',
 				'!/contact' : 'contact',
@@ -17,6 +20,7 @@
 			}
 		});
 
+		//depending on the routes condition 
 		var init = function() {
 			var route = new Routes;
 			
@@ -46,14 +50,8 @@
 			//start backbone history tracker
 			Backbone.history.start();
 		
-			//loads the tempate for footer
-			$.ajax({
-				type :"POST",
-				url : "templates/footer.mustache",
-			}).done(function(tmp) {
-				$("#footer").html(tmp);
-			});
-			
+			//loads the template for footer
+			$("#footer").html(tpl);
 		};
 
 		return {

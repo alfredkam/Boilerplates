@@ -1,50 +1,14 @@
+//the views template
 (function() {
 	define([
-		'jquery/jquery',
-		'underscore/underscore',
-		'backbone/backbone',
-		'mustache/mustache',
-	],function($, _, Backbone, Mustache) {
-
-		var aboutView = Backbone.View.extend({
-			render : function(lang) {
-				$.ajax({
-					url : "templates/about.mustache",
-					type : "POST",
-				}).done(function(tmp) {
-					$("#body").html(tmp);
-				});
-			},	
-		});
-
-		var contactView = Backbone.View.extend({
-			render : function(lang) {
-				console.log(lang);
-				$.ajax({
-					url : "templates/contact.mustache",
-					type : "POST",
-				}).done(function(tmp) {
-					$("#body").html(tmp);
-				});
-			},
-		});
-		
-		var defaultView = Backbone.View.extend({
-			render : function(lang) {
-				console.log(lang);
-				$.ajax({
-					url : "templates/main.mustache",
-					type : "POST",
-				}).done(function(tmp) {
-					$("#body").html(tmp);
-				});
-			},
-		});
-
+		'views/home/homeView',	
+		'views/contact/contactView',
+		'views/about/aboutView',
+	],function(home, contact, about) {
 		return {
-			Default : defaultView,
-			About : aboutView,
-			Contact : contactView,
+			Default : home,
+			About : about,
+			Contact : contact,
 		};
 	});
 })();

@@ -1,16 +1,17 @@
-mvp-framework
+mvp-js
 =============
 a stock version of model view presenter web framework
 
 this frameworks is compose of 
 
-bootstrap<br>
-require js<Br>
-jquery<Br>
-backbone js<br>
-underscore<br>
-mustache<Br>
-yepnope<Br>
+	bootstrap<br>
+	requirejs<Br>
+		requirejs text extension : https://github.com/requirejs/text
+	jquery<Br>
+	backbone js<br>
+	underscore<br>
+	mustache<Br>
+	yepnope<Br>
 
 
 Note

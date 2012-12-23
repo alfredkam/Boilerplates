@@ -1,3 +1,4 @@
+//this script defines the dependencies
 (function() {
 	requirejs.config({
 		waitSeconds: 15,
@@ -5,7 +6,9 @@
 		paths : {
 			views : '../js/views',
 			models : '../js/models',
-			controller : '../js/controller',
+			presenter : '../js/presenter',
+			text : 'requirejs/text',
+			tpl : '../templates',
 		},
 		shim : {
 			'jquery/jquery-ui/js/jquery-ui' : {
@@ -38,7 +41,7 @@
 		'underscore/underscore',
 		'backbone/backbone',
 		'mustache/mustache',
-		'controller/router',
+		'presenter/router',
 	],function($, _, Backbone, Mustache, Router) {
 		Router.init();
 	});
