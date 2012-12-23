@@ -7,49 +7,51 @@
 			views : '../js/views',
 			models : '../js/models',
 			presenter : '../js/presenter',
-			text : 'requirejs/text',
 			tpl : '../templates',
 		},
 		shim : {
-			'jquery/jquery-ui/js/jquery-ui' : {
-				deps : ['jquery/jquery'],
+			'jquery-ui' : {
+				deps : ['jquery'],
 			},
-			'jquery/jquery' : {
+			'jquery' : {
 				exports : "$",
 			},
-			'yepnope/yepnope' : {
+			'yepnope' : {
 				exports : 'yepnope',
 			},
-			'underscore/underscore' : {
+			'underscore' : {
 				exports : 'underscore',
 			},
-			'backbone/backbone' : {
-				deps : ['underscore/underscore', 'jquery/jquery'],
+			'backbone' : {
+				deps : ['underscore', 'jquery'],
 				exports : 'Backbone',	
 			},
-			'bootstrap/js/bootstrap' : {
-				deps : ['jquery/jquery','jquery/jquery-ui/js/jquery-ui'],
+			'bootstrap' : {
+				deps : ['jquery','jquery-ui'],
 			},
-			'mustache/mustache' : {
-				deps : ['jquery/jquery'],
+			'mustache' : {
+				deps : ['jquery'],
+			},
+			'bootbox' : {
+				deps : ['jquery', 'bootstrap'],	
 			},
 		},
 	});
 
 	require([
-		'jquery/jquery',
-		'underscore/underscore',
-		'backbone/backbone',
-		'mustache/mustache',
+		'jquery',
+		'underscore',
+		'backbone',
+		'mustache',
 		'presenter/router',
 	],function($, _, Backbone, Mustache, Router) {
 		Router.init();
 	});
-	require(['bootstrap/js/bootstrap']);
+	require(['bootstrap']);
 	/* using yepnope to load additional scripts if it is a tablet */
 	/*
 	require([
-		'yepnope/yepnope'
+		'yepnope'
 	], function(yepnope) {
 		var isTablet = navigator.userAgent.match(/(iPad|Android .* Chrome\/[.0-9]* (?!Mobile)|Opera Tablet|Android .* (?!Mobile)|Tablet|silk|kindle fire)/i) != null;
 		yepnope({
