@@ -1,4 +1,8 @@
-
+/* min height set to push the footer down */
+div#body {
+	min-height: 500px;
+	margin-bottom:10px;
+}
 
 
 
