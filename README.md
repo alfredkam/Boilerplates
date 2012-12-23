@@ -14,3 +14,5 @@ Under the unmbrella it contains
 	<a href='http://mustache.github.com'>Mustache</a>
 	<a href='http://yepnopejs.com'>yepnope</a>
 
+All codes are under the MIT License
+
