@@ -2,10 +2,10 @@
 
 (function() {
 	define([
-		'jquery',
-		'underscore',
-		'backbone',
-		'mustache',
+		'jquery/jquery',
+		'underscore/underscore',
+		'backbone/backbone',
+		'mustache/mustache',
 		'text!tpl/contact.mustache',
 	],function($, _, Backbone, Mustache, tpl) {
 

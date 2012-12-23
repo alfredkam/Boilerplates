@@ -7,61 +7,63 @@
 			views : '../js/views',
 			models : '../js/models',
 			presenter : '../js/presenter',
+			text : 'requirejs/text',
 			tpl : '../templates',
 		},
 		//set up the dependecies here
 		shim : {
-			'jquery-ui' : {
-				deps : ['jquery'],
+			'jquery-ui/jquery-ui' : {
+				deps : ['jquery/jquery'],
 			},
-			'jquery' : {
+			'jquery/jquery' : {
 				exports : "$",
 			},
-			'yepnope' : {
+			'yepnope/yepnope' : {
 				exports : 'yepnope',
 			},
-			'underscore' : {
+			'underscore/underscore' : {
 				exports : 'underscore',
 			},
-			'backbone' : {
-				deps : ['underscore', 'jquery'],
+			'backbone/backbone' : {
+				deps : ['underscore/underscore', 'jquery/jquery'],
 				exports : 'Backbone',	
 			},
-			'bootstrap' : {
-				deps : ['jquery','jquery-ui'],
+			'bootstrap/bootstrap' : {
+				deps : ['jquery/jquery','jquery-ui/jquery-ui'],
 			},
-			'mustache' : {
-				deps : ['jquery'],
+			'mustache/mustache' : {
+				deps : ['jquery/jquery'],
+				exports : 'mustache',
 			},
-			'bootbox' : {
-				deps : ['jquery', 'bootstrap'],	
+			'bootbox/bootbox' : {
+				deps : ['jquery/jquery', 'bootstrap/bootstrap'],	
 			},
-			'jquery-notify' : {
-				deps : ['jquery', 'jquery-ui'],
+			'jquery-notify/jquery-notify' : {
+				deps : ['jquery/jquery', 'jquery-ui/jquery-ui'],
 			},
 		},
 	});
 
 	require([
-		'jquery',
-		'underscore',
-		'backbone',
-		'mustache',
+		'jquery/jquery',
+		'underscore/underscore',
+		'backbone/backbone',
+		'mustache/mustache',
 		'presenter/router',
-		'bootstrap',
-	//	'bootbox',           			/* enable these lines if to use them */
-	//	'jquery-notify',			/* enable these lines if to use them */
-	],function($, _, Backbone, Mustache, Router) {
+		'bootstrap/bootstrap',
+	//	'bootbox/bootbox',           			/* enable these lines if to use them */
+	//	'jquery-notify/jquery-notify',			/* enable these lines if to use them */
+	],function($, _, Backbone, mustache, Router) {
 		Router.init();
 	});
 	/* using yepnope to load additional scripts if it is a tablet */
 	/*
 	require([
-		'yepnope'
+		'yepnope/yepnope'
 	], function(yepnope) {
 		var isTablet = navigator.userAgent.match(/(iPad|Android .* Chrome\/[.0-9]* (?!Mobile)|Opera Tablet|Android .* (?!Mobile)|Tablet|silk|kindle fire)/i) != null;
 		yepnope({
-			test : yepnope,
+			test : isTablet,
 			yep : //do something,
 			nope : //else do something else
 		});

@@ -1,10 +1,10 @@
 //this script defines the routes set up
 (function() {
 	define([
-		'jquery',
-		'underscore',
-		'backbone',
-		'mustache',
+		'jquery/jquery',
+		'underscore/underscore',
+		'backbone/backbone',
+		'mustache/mustache',
 		'views/site.view',
 		'text!tpl/footer.mustache',
 	],function($, _, Backbone, Mustache, Views, tpl) {

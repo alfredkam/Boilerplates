@@ -3,10 +3,10 @@
 
 (function() {
 	define([
-		'jquery',
-		'underscore',
-		'backbone',
-		'mustache'
+		'jquery/jquery',
+		'underscore/underscore',
+		'backbone/backbone',
+		'mustache/mustache'
 	],function($, _, Backbone, Mustache) {
 	
 
