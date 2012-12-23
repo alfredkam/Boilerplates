@@ -1,25 +1,16 @@
 mvp-js
 =============
-a stock version of model view presenter web framework
+Taking all the greatness from the web mvp-js is born! This framework is a pre-build, ready to deploy.
 
-this frameworks is compose of 
+Under the unmbrella it contains 
 
-	bootstrap<br>
-	requirejs<Br>
-		requirejs text extension : https://github.com/requirejs/text
-	jquery<Br>
-	backbone js<br>
-	underscore<br>
-	mustache<Br>
-	yepnope<Br>
-
-
-Note
-====
-
-May run into access control origin when running localy in chrome you can fix it by running this command in termainl (this fix is for macs) 
-
-	open /Applications/Google\ Chrome.app --args --allow-file-access-from-files --allow-access-control-allow-origin
-
-
+	<a href='http://twitter.github.com/bootstrap/'>BootStrap</a>
+	<a href='http://requirejs.org/'>Requirejs</a>
+		<a href='https://github.com/requirejs/text'>Requirejs text ext</a>
+	<a href='http://jquery.com'>jQuery</a>
+		<a href='http://jqueryui.com'>jQueryUI</a>
+	<a href='http://backbonejs.org/'>BackBonejs</a>
+	<a href='underscorejs.org'>UnderScorejs</a>
+	<a href='http://mustache.github.com'>Mustache</a>
+	<a href='http://yepnopejs.com'>yepnope</a>
 

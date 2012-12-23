@@ -46,4 +46,18 @@
 		Router.init();
 	});
 	require(['bootstrap/js/bootstrap']);
+	/* using yepnope to load additional scripts if it is a tablet */
+	/*
+	require([
+		'yepnope/yepnope'
+	], function(yepnope) {
+		var isTablet = navigator.userAgent.match(/(iPad|Android .* Chrome\/[.0-9]* (?!Mobile)|Opera Tablet|Android .* (?!Mobile)|Tablet|silk|kindle fire)/i) != null;
+		yepnope({
+			test : yepnope,
+			yep : //do something,
+			nope : //else do something else
+		});
+	});
+	*/
+
 })();
