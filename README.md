@@ -12,6 +12,7 @@ Under the unmbrella it contains
 <a href='underscorejs.org'>UnderScorejs</a><br>
 <a href='http://mustache.github.com'>Mustache</a><br>
 <a href='http://yepnopejs.com'>yepnope</a><br>
+<a href='http://fontello.com'>fontello</a><br>
 <a href='http://bootboxjs.com/'>Bootboxjs</a><br>
 <a href='https://github.com/ehynds/jquery-notify'>jQuery Notify</a><br>
 
