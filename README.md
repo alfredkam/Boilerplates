@@ -9,7 +9,7 @@ Under the unmbrella it contains
 <a href='http://jquery.com'>jQuery</a><br>
 <a href='http://jqueryui.com'>jQueryUI</a><br>
 <a href='http://backbonejs.org/'>BackBonejs</a><br>
-<a href='underscorejs.org'>UnderScorejs</a><br>
+<a href='http://underscorejs.org'>UnderScorejs</a><br>
 <a href='http://mustache.github.com'>Mustache</a><br>
 <a href='http://yepnopejs.com'>yepnope</a><br>
 <a href='http://fontello.com'>fontello</a><br>
