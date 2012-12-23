@@ -1,6 +1,6 @@
 MVPjs
 =============
-Taking all the greatness from the web, MVPjs is born! MVPjs is a frontend framework and a starter kit that uses the model view presenter design pattern.  To achive it, it combines all the awesome libraries from the web.<br>
+Taking all the greatness from the web, MVPjs is born! MVPjs is a frontend javascript framework and a starter kit that uses the model view presenter design pattern.  To achive it, it combines all the awesome libraries from the web.<br>
 Under the unmbrella it contains 
 
 <a href='http://twitter.github.com/bootstrap/'>BootStrap</a><br>
@@ -14,6 +14,8 @@ Under the unmbrella it contains
 <a href='http://yepnopejs.com'>yepnope</a><br>
 <a href='http://bootboxjs.com/'>Bootboxjs</a><br>
 <a href='https://github.com/ehynds/jquery-notify'>jQuery Notify</a><br>
+
+You can check the links above for the documentations of those libraries.
 
 License
 ======
