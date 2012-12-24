@@ -26,10 +26,10 @@ File Structure:
 	js
 	|------ boilerplate.js
 	|------ views
-		|----- site.views.js
+	|	|----- site.views.js
 	|------ collecions
 	|------ models
-		|----- site.models.js
+	|	|----- site.models.js
 	|------ presenter
 	|	|------ routers.js
 	|	|----- main.js
