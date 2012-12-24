@@ -23,6 +23,10 @@ File Structure:
 	index.html
 	templates
 	|------ *.mustache files
+	css
+	|	|----- style.css
+	lib
+	|	|----- libraries
 	js
 	|------ boilerplate.js
 	|------ views
@@ -33,8 +37,6 @@ File Structure:
 	|------ presenter
 	|	|------ routers.js
 	|	|----- main.js
-	lib
-	|	|----- libraries
 
 Additional Included Files:<br>
 - jQuery Plugin Boiler Plate<br>
