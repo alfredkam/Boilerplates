@@ -1,3 +1,4 @@
+#this code is only for apache server
 ErrorDocument 404 /index.html
 IndexIgnore *
 RewriteEngine On

@@ -41,9 +41,14 @@ File Structure:
 Additional Included Files:<br>
 - jQuery Plugin Boiler Plate<br>
 
+FYI
+=====
+Remove .htacess if your not using apache server
+
+
 License
 ======
-All codes are under the MIT License and others
+All codes and respective frameworks are under the MIT License and others
 
 Suggested Readings
 ======
