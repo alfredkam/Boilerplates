@@ -1,6 +1,6 @@
 mvp-boilerplate
 =============
-This boilerplate is designed to be an off the shelf minimal viable product to create heavy lifting js applications
+This boilerplate is designed to be an off the shelf minimal viable product for heavy lifting js applications
 
 currently contains:
 
