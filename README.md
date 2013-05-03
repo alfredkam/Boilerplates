@@ -1,7 +1,8 @@
-MVPjs
+mvp-boilerplate
 =============
-Taking all the greatness from the web, MVPjs is born! MVPjs is a frontend boilerplate javascript framework and a starter kit for a minimal viable product.  To achive it, it combines all the awesome libraries from the web.<br>
-Under the unmbrella it contains 
+This boilerplate is designed to be an off the shelf minimal viable product to create heavy lifting js applications
+
+currently contains:
 
 <a href='http://twitter.github.com/bootstrap/'>BootStrap</a><br>
 <a href='http://requirejs.org/'>Requirejs</a><br>
