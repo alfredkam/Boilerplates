@@ -53,6 +53,9 @@ All codes and respective frameworks are under the MIT License and others
 
 Suggested Readings
 ======
+- a great book to get started with backbone<br>
+http://addyosmani.github.io/backbone-fundamentals
+
 - Router<br>
 http://backbonetutorials.com/what-is-a-router/ <br>
 
