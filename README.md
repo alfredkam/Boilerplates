@@ -3,9 +3,9 @@ mvp-boilerplate
 This boilerplate is designed to be an off the shelf minimal viable product for heavy lifting js applications
 
 Credits & Developed By<br>
-Alfred Kam 	  - git: @alfredkam		t: @alfredkam <br>
-Myung Sun Kim - git: @myungsunrex	t: @rexkm<br>
-Mohamad Kouli - git: @KoulMomo		t: @koulMomo<br>
+Alfred Kam 	  - git: @alfredkam		,	t: @alfredkam <br>
+Myung Sun Kim - git: @myungsunrex	,	t: @rexkm<br>
+Mohamad Kouli - git: @KoulMomo		,	t: @koulMomo<br>
 
 
 License
