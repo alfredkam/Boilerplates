@@ -4,7 +4,7 @@ This boilerplate is designed to be an off the shelf minimal viable product for h
 
 Credits & Developed By<br>
 Alfred Kam 	  - git: @alfredkam		,	t: @alfredkam <br>
-Myung Sun Kim - git: @myungsunrex	,	t: @rexkm<br>
+Myung Sun Kim - git: @Rexk	,	t: @rexkm<br>
 Mohamad Kouli - git: @KoulMomo		,	t: @koulMomo<br>
 
 
