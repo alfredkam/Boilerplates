@@ -2,49 +2,10 @@ mvp-boilerplate
 =============
 This boilerplate is designed to be an off the shelf minimal viable product for heavy lifting js applications
 
-currently contains:
-
-<a href='http://twitter.github.com/bootstrap/'>BootStrap</a><br>
-<a href='http://requirejs.org/'>Requirejs</a><br>
-<a href='https://github.com/requirejs/text'>Requirejs text ext</a><br>
-<a href='http://jquery.com'>jQuery</a><br>
-<a href='http://jqueryui.com'>jQueryUI</a><br>
-<a href='http://backbonejs.org/'>BackBonejs</a><br>
-<a href='http://underscorejs.org'>UnderScorejs</a><br>
-<a href='http://mustache.github.com'>Mustache</a><br>
-<a href='http://yepnopejs.com'>yepnope</a><br>
-<a href='http://fontello.com'>fontello</a><br>
-<a href='http://bootboxjs.com/'>Bootboxjs</a><br>
-<a href='https://github.com/ehynds/jquery-notify'>jQuery Notify</a><br>
-
-You can check the links above for the documentations of those libraries.<br>
-
-File Structure:
-
-	index.html
-	templates
-	|------ *.mustache files
-	css
-	|	|----- style.css
-	lib
-	|	|----- libraries
-	js
-	|------ boilerplate.js
-	|------ views
-	|	|----- site.views.js
-	|------ collecions
-	|------ models
-	|	|----- site.models.js
-	|------ presenter
-	|	|------ routers.js
-	|	|----- main.js
-
-Additional Included Files:<br>
-- jQuery Plugin Boiler Plate<br>
-
-FYI
-=====
-Remove .htacess if your not using apache server
+Credits & Developed By
+Alfred Kam 	  - git: @alfredkam		t: @alfredkam
+Myung Sun Kim - git: @myungsunrex	t: @rexkm
+Mohamad Kouli - git: @KoulMomo		t: @koulMomo
 
 
 License
