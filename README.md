@@ -1,6 +1,6 @@
 mvp-boilerplate
 =============
-This boilerplate is designed to be an off the shelf minimal viable product for heavy lifting js applications
+This boilerplate is designed to be an off the shelf minimal viable product for heavy lifting web app in javascript
 
 Credits & Developed By<br>
 Alfred Kam 	  - git: @alfredkam		,	t: @alfredkam <br>
