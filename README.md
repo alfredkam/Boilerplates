@@ -1,6 +1,8 @@
-mvp-boilerplate
+jsBoilerplate
 =============
-This boilerplate is designed to be an off the shelf minimal viable product for heavy lifting web app in javascript
+jsBoilerplate is a javascript framework for developing heavy lifing web applications.  It is oop friendly, light weight and mvp (minimal viable product) ready.
+
+jsBoilerplate is developed by our startup Appfuel.me 
 
 Credits & Developed By<br>
 Alfred Kam 	  - git: @alfredkam		,	t: @alfredkam <br>
