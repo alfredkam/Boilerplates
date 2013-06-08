@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Web App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        
+        <!-- css -->
+        <!-- normalize -->
+        <link rel="stylesheet" href="css/normalize.css"/>
+        
+        <!-- bootstrap -->
+		<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" />
+        
+        <!-- mine -->
+        <link rel='stylesheet' href='css/app/base.css'/>
+		
+		<!-- favicon -->
+		<link rel="icon" href="favicon.ico" />	
+				
+        <!-- fonts -->
+        <!-- place fontello or font awesome here -->
+        <script src="lib/modernizr/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body id="app">
+    	<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+<!--         site content starts here -->
+        <header id="header-wrapper"></header>
+<!--         wrapper -->
+        <div id="wrapper">
+<!--         	content -->
+        	<div id="dashboard"></div>
+<!--         	push -->
+        	<div id="push"></div>/push
+        </div>
+<!--         /wrapper -->
+		
+		<!-- footer -->
+		<footer id="footer"></footer>
+		<!-- /footer -->
+        
+        
+        <!-- Overray notifications -->
+        <div id="overlays"></div>
+        
+        <!-- js -->
+        <script type="text/javascript" src="js/main/main.js"></script>
+        
+        <!-- require -->
+        <!--<script type="text/javascript" data-main="js/main/dashboard.appfuel-main.js" src="lib/require/require.js">
+        -->
+        <!-- build -->
+        <!--  <script type="text/javascript" src="js/build/sitename.js"></script> -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. And DOMAIN to your domain -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'], ['_setDomainName', 'appfuel.me'], ['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
