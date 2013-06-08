@@ -10,7 +10,6 @@
 	var sitename = "localhost";
 	
 	window[sitename] = window[sitename] || {};
-	window[alt] = window[sitename];
 	
 	var namespace = window[sitename];
 	

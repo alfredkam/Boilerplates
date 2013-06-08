@@ -3,8 +3,8 @@
 define([ "jquery", "backbone", "marionette",
 
 //       VIEWS
-         "js/views/dashboard/HeaderView", "js/views/dashboard/FooterView",
-
+         "js/views/HeaderView", 
+         "js/views/FooterView",
 //       Modules
 
 //       NO EXPORTS goes last
