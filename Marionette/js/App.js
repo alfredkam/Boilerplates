@@ -6,13 +6,12 @@ define([
 	"marionette",
 	"mustache",
 	//CONTROLLER
-	"js/DashboardController",
+	"js/AppController",
 	//ROUTER
-	"js/DashboardRouter",
+	"js/AppRouter",
 	//LAYOUT
-	"js/views/dashboard/DashboardLayout",
+	"js/views/AppLayout",
 	//MODELS
-	"js/models/core/api/actor/Developer",
 	//OTHERS
 	"js/vent/vent"
 ], function(
