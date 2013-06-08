@@ -13,7 +13,7 @@ define([
 	"js/views/AppLayout",
 	//MODELS
 	//OTHERS
-	"js/vent/vent"
+	"js/util/vent/vent"
 ], function(
 		config, WebConsoleUtils, 
 		Backbone, Marionette, Mustache, 

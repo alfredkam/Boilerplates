@@ -1,4 +1,4 @@
-Boilerplate
+Boilerplates
 =============
 These Boilerplates are developed to handle most of the Startup's Web App.  Feel free to check it out, contribute and leave a comment :)
 
