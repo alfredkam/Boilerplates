@@ -10,6 +10,7 @@ define(
 
 		 function($,_,Backbone,Marionette,tpl){
 			var regionViews={flot:flotView,page1:page1View,page2:page2View,};
+			
 			var NewThemeView = Marionette.Layout.extend({
 				tagName : "div",
 				className : "",
