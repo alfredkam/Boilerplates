@@ -1,10 +1,12 @@
-Boilerplate
+jsBoilerplate
 =============
-
+jsBoilerplate is a javascript framework for developing heavy lifing web applications.  It is oop friendly, light weight and mvp (minimal viable product) ready.
 
 Credits & Developed By<br>
 Alfred Kam 	  - git: @alfredkam		,	t: @alfredkam <br>
 Myung Sun Kim - git: @Rexk	,	t: @rexkm<br>
+Mohamad Kouli - git: @KoulMomo		,	t: @koulMomo<br>
+
 
 License
 ======
