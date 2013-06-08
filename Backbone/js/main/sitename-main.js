@@ -49,7 +49,15 @@ require.config({
 	}
 });
 
-require(["js/util/WebConsoleUtils", "backbone", "js/Router"], function(WebConsoleUtils){
+require([
+        "js/util/WebConsoleUtils", 
+        "backbone", 
+        "js/Router"
+], function(
+		WebConsoleUtils, 
+		Backbone, 
+		Router
+){
 	
 	//TODO: Starting point
 	var config = window.sitename.getConfig();
@@ -61,6 +69,7 @@ require(["js/util/WebConsoleUtils", "backbone", "js/Router"], function(WebConsol
 	});
 	
 	var router = new Router();
+	console.log("test");
 	Backbone.history.start();
 	
 	consoleUtils.initConsole(/*debgu flag here*/);
