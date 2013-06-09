@@ -5,7 +5,7 @@ define(
 		 "backbone",
 		 "marionette",
 		 "js/views/app/demo/TestInputsView",
-		 "text!tpl/app/demo.mustache",
+		 "text!tpl/app/demo/Demo.mustache",
 		 
 		 ],
 

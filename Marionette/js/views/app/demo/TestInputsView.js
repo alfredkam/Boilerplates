@@ -5,7 +5,7 @@ define(
 		 "backbone",
 		 "marionette",
 
-		 "text!tpl/app/testInputs.mustache",
+		 "text!tpl/app/demo/TestInputs.mustache",
 		 ],function($,_,Backbone,Marionette,tpl){
 
 			var TestInputViews = Marionette.ItemView.extend({
