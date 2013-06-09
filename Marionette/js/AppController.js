@@ -95,6 +95,7 @@ define([ "jquery", "backbone", "marionette",
 		},
 		demo : function()
 		{
+			this.initHeaderFooter("demo");
 			this.regions.contentRegion.show(new DemoView({model:new Backbone.Model()}));
 		},
 		login : function()
