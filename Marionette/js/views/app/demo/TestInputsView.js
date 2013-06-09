@@ -4,7 +4,6 @@ define(
 		 "underscore",
 		 "backbone",
 		 "marionette",
-
 		 "text!tpl/app/demo/TestInputs.mustache",
 		 ],function($,_,Backbone,Marionette,tpl){
 

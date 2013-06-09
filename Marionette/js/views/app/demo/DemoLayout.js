@@ -5,16 +5,17 @@ define(
 		 "backbone",
 		 "marionette",
 		 "js/views/app/demo/TestInputsView",
+		 "js/views/app/demo/FlotView",
 		 "text!tpl/app/demo/Demo.mustache",
 		 
 		 ],
 
-		 function($,_,Backbone,Marionette,TestInputsView,tpl){
-			var regionViews={flot: Marionette.ItemView, TestInputsView:TestInputsView, page2:Marionette.ItemView,};
+		 function($,_,Backbone,Marionette,TestInputsView,FlotView,tpl){
+			var regionViews={flot: FlotView, TestInputsView:TestInputsView, page2:Marionette.ItemView,};
 
 			var DemoLayout = Marionette.Layout.extend({
 				tagName : "div",
-				className : "",
+				className : "container",
 				id : "content",
 				template : tpl,
 				initialize : function(options) {
@@ -32,7 +33,6 @@ define(
 						// change the region here!
 						var val = $(e.target).val();
 						console.log(val);
-						var view =regionViews[val];
 						this.regions.sampleRegion.show(new regionViews[val]({model:this.model}));
 					},
 					// captures the event and sets the model
@@ -42,7 +42,7 @@ define(
 						this.model.set(name, input.val());
 						console.log(name+" is changed to " + this.model.get(name));
 					},
-					"change select": function(e) {
+					"change select[id!='changeDemo']": function(e) {
 						var input = $(e.target);
 						var name = input.prop("name");
 						this.model.set(name, input.val());
@@ -70,8 +70,6 @@ define(
 					this.model.off(null, null, this);
 					this.region.close();
 				},
-
-
 
 			});
 			return DemoLayout;
