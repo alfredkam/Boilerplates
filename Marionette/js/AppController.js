@@ -3,18 +3,23 @@
 define([ "jquery", "backbone", "marionette",
 
 //       VIEWS
-"js/views/HeaderView", "js/views/FooterView", "js/views/AppLayout","js/views/app/demo/demoLayout",
+         "js/views/HeaderView", 
+         "js/views/FooterView", 
+         "js/views/app/demo/demoLayout",
+         "js/views/AppLayout",
 //       Modules
 
 //       NO EXPORTS goes last
 
-], function($, Backbone, Marionette, HeaderView, FooterView, AppLayout,DemoView)
-{
+], function(
+		$, Backbone, Marionette, 
+		HeaderView, FooterView, DemoView, 
+		AppLayout
+) {
 	var DashboardController = Marionette.Controller.extend({
 
 		initialize : function()
 		{
-
 			this.isInit = this.isInit || false;
 
 			if (!this.isInit)
@@ -29,9 +34,11 @@ define([ "jquery", "backbone", "marionette",
 
 		initHeaderFooter : function(pageName)
 		{
+			console.log("ere");	
 			// a good place for code that needs to be ran every page
 			if (!this.regions.headerRegion.currentView)
 			{
+				console.log(new HeaderView({}));
 				this.regions.headerRegion.show(new HeaderView({}));
 			}
 
@@ -41,7 +48,8 @@ define([ "jquery", "backbone", "marionette",
 			}
 			// this.setActiveLink(pageName);
 		},
-
+		/* use this if to set up login */
+		/*
 		index : function()
 		{
 			var result = this.checkLogin();
@@ -64,10 +72,6 @@ define([ "jquery", "backbone", "marionette",
 				// this.login();
 			}
 		},
-		demo : function()
-		{
-			this.regions.contentRegion.show(new DemoView({model:new Backbone.Model()}));
-		},
 		checkLogin : function()
 		{
 			// var isLoggedIn = false;
@@ -83,8 +87,16 @@ define([ "jquery", "backbone", "marionette",
 			//
 			// return isLoggedIn;
 			return false;
-		},
+		}, */
 
+		home : function() {
+			this.initHeaderFooter("home");
+			this.curretRoute = "#/home";
+		},
+		demo : function()
+		{
+			this.regions.contentRegion.show(new DemoView({model:new Backbone.Model()}));
+		},
 		login : function()
 		{
 			console.log("rendering login view");

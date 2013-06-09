@@ -11,7 +11,7 @@ define([
 	var DashboardRouter = Marionette.AppRouter.extend({
 		
 		appRoutes:{
-			"" : "index",
+			"" : "home",
 			"demo" : "demo"
 		}
 	});
