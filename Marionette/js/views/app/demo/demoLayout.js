@@ -15,7 +15,7 @@ define(
 
 			var DemoLayout = Marionette.Layout.extend({
 				tagName : "div",
-				className : "",
+				className : "container",
 				id : "content",
 				template : tpl,
 				initialize : function(options) {
