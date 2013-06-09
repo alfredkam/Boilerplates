@@ -4,14 +4,15 @@ define(
 		 "underscore",
 		 "backbone",
 		 "marionette",
-
+		 "js/views/app/demo/TestInputsView",
 		 "text!tpl/app/demo.mustache",
+		 
 		 ],
 
-		 function($,_,Backbone,Marionette,tpl){
-			var regionViews={flot:flotView,page1:page1View,page2:page2View,};
-			
-			var NewThemeView = Marionette.Layout.extend({
+		 function($,_,Backbone,Marionette,TestInputsView,tpl){
+			var regionViews={flot: Marionette.ItemView, TestInputsView:TestInputsView, page2:Marionette.ItemView,};
+
+			var DemoLayout = Marionette.Layout.extend({
 				tagName : "div",
 				className : "",
 				id : "content",
@@ -20,7 +21,7 @@ define(
 					this.model = options.model || new Backbone.Model();
 				},
 				regions : {
-					sampleRegion:"#sampleRegion",
+					sampleRegion: new Marionette.Region({el:"#sampleRegion"}),
 				},
 				// you can plug in data here for rendering
 				templateHelpers: function(){
@@ -30,7 +31,9 @@ define(
 					"change select#changeDemo": function(e){
 						// change the region here!
 						var val = $(e.target).val();
-						this.regions.sampleRegion.show( new regionViews[val]());
+						console.log(val);
+						var view = new regionViews[val]();
+						this.regions.sampleRegion.show( new Marionette.ItemView());
 					},
 					// captures the event and sets the model
 					"change input[type='text']" : function(e) {
@@ -48,6 +51,8 @@ define(
 					return data;
 				},
 				onShow : function() {
+					console.log("onShow");
+					this.regions.sampleRegion.show(new regionViews["TestInputsView"]({model:this.model}))
 					// a good place to place bindings for your model here
 					this.model.on("change", function() {
 						console.log(this.model);
@@ -60,6 +65,7 @@ define(
 				},
 
 
-			);
+
 			});
-		});
+			return DemoLayout;
+		});	
