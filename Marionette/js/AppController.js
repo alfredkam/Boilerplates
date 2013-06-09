@@ -3,18 +3,23 @@
 define([ "jquery", "backbone", "marionette",
 
 //       VIEWS
-"js/views/HeaderView", "js/views/FooterView", "js/views/AppLayout","js/views/app/demo/demoLayout",
+         "js/views/HeaderView", 
+         "js/views/FooterView", 
+         "js/views/app/demo/demoLayout",
+         "js/views/AppLayout",
 //       Modules
 
 //       NO EXPORTS goes last
 
-], function($, Backbone, Marionette, HeaderView, FooterView, AppLayout,DemoView)
-{
+], function(
+		$, Backbone, Marionette, 
+		HeaderView, FooterView, DemoView, 
+		AppLayout
+) {
 	var DashboardController = Marionette.Controller.extend({
 
 		initialize : function()
 		{
-
 			this.isInit = this.isInit || false;
 
 			if (!this.isInit)
