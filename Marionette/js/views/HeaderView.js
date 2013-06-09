@@ -13,12 +13,11 @@ define([
 
 ], function($, Marionette, tpl){
 	var HeaderView = Marionette.ItemView.extend({
-		
 		template: tpl,
 		events: {
 			//"click button.logout": "logout"
 		}
-		//enable if have login.
+		//enable if have login
 		/*logout: function(e){
 			$(e.target.form).submit();
 		} */
