@@ -34,7 +34,6 @@ define([ "jquery", "backbone", "marionette",
 
 		initHeaderFooter : function(pageName)
 		{
-			console.log("ere");	
 			// a good place for code that needs to be ran every page
 			if (!this.regions.headerRegion.currentView)
 			{
@@ -44,6 +43,7 @@ define([ "jquery", "backbone", "marionette",
 
 			if (!this.regions.footerRegion.currentView)
 			{
+				console.log(new FooterView({}));
 				this.regions.footerRegion.show(new FooterView());
 			}
 			// this.setActiveLink(pageName);
@@ -92,6 +92,7 @@ define([ "jquery", "backbone", "marionette",
 		home : function() {
 			this.initHeaderFooter("home");
 			this.curretRoute = "#/home";
+//			this.regions.contentRegion.show(new DemoView({model:new Backbone.Model()}));
 		},
 		demo : function()
 		{
