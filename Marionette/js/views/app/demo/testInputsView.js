@@ -8,7 +8,7 @@ define(
 		 "text!tpl/app/testInputs.mustache",
 		 ],function($,_,Backbone,Marionette,tpl){
 
-			var TestInputViews = new Marionette.ItemView.extend({
+			var TestInputViews = Marionette.ItemView.extend({
 				tagName:"div",
 				className:"",
 				id:"demoContent",

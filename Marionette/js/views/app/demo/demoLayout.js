@@ -32,8 +32,8 @@ define(
 						// change the region here!
 						var val = $(e.target).val();
 						console.log(val);
-						var view = new regionViews[val]();
-						this.regions.sampleRegion.show( new Marionette.ItemView());
+						var view =regionViews[val];
+						this.regions.sampleRegion.show(new view({model:this.model}));
 					},
 					// captures the event and sets the model
 					"change input[type='text']" : function(e) {
@@ -52,7 +52,7 @@ define(
 				},
 				onShow : function() {
 					console.log("onShow");
-					this.regions.sampleRegion.show(new regionViews["TestInputsView"]({model:this.model}))
+					this.regions.sampleRegion.show(new Marionette.ItemView({template:""}))
 					// a good place to place bindings for your model here
 					this.model.on("change", function() {
 						console.log(this.model);

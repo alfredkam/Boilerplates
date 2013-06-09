@@ -66,7 +66,7 @@ define([ "jquery", "backbone", "marionette",
 		},
 		demo : function()
 		{
-			this.regions.contentRegion.show(new DemoView());
+			this.regions.contentRegion.show(new DemoView({model:new Backbone.Model()}));
 		},
 		checkLogin : function()
 		{
