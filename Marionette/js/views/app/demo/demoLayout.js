@@ -33,10 +33,16 @@ define(
 						var val = $(e.target).val();
 						console.log(val);
 						var view =regionViews[val];
-						this.regions.sampleRegion.show(new view({model:this.model}));
+						this.regions.sampleRegion.show(new regionViews[val]({model:this.model}));
 					},
 					// captures the event and sets the model
-					"change input[type='text']" : function(e) {
+					"change input" : function(e) {
+						var input = $(e.target);
+						var name = input.prop("name");
+						this.model.set(name, input.val());
+						console.log(name+" is changed to " + this.model.get(name));
+					},
+					"change select": function(e) {
 						var input = $(e.target);
 						var name = input.prop("name");
 						this.model.set(name, input.val());
@@ -51,9 +57,10 @@ define(
 					return data;
 				},
 				onShow : function() {
-					console.log("onShow");
-					this.regions.sampleRegion.show(new Marionette.ItemView({template:""}))
+					console.log("onShow is triggered!");
+					this.regions.sampleRegion.show(new regionViews['TestInputsView']({model:this.model}))
 					// a good place to place bindings for your model here
+					console.log("binding the model to the change event!");
 					this.model.on("change", function() {
 						console.log(this.model);
 					}, this);
