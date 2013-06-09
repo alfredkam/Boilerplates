@@ -11,7 +11,7 @@ define(
 		 ],
 
 		 function($,_,Backbone,Marionette,TestInputsView,FlotView,tpl){
-			var regionViews={flot: Marionette.ItemView, TestInputsView:TestInputsView, page2:Marionette.ItemView,};
+			var regionViews={flot: FlotView, TestInputsView:TestInputsView, page2:Marionette.ItemView,};
 
 			var DemoLayout = Marionette.Layout.extend({
 				tagName : "div",
@@ -33,7 +33,6 @@ define(
 						// change the region here!
 						var val = $(e.target).val();
 						console.log(val);
-						var view =regionViews[val];
 						this.regions.sampleRegion.show(new regionViews[val]({model:this.model}));
 					},
 					// captures the event and sets the model
