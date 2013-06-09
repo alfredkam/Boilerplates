@@ -5,11 +5,12 @@ define(
 		 "backbone",
 		 "marionette",
 		 "js/views/app/demo/TestInputsView",
+		 "js/views/app/demo/FlotView",
 		 "text!tpl/app/demo.mustache",
 		 
 		 ],
 
-		 function($,_,Backbone,Marionette,TestInputsView,tpl){
+		 function($,_,Backbone,Marionette,TestInputsView,FlotView,tpl){
 			var regionViews={flot: Marionette.ItemView, TestInputsView:TestInputsView, page2:Marionette.ItemView,};
 
 			var DemoLayout = Marionette.Layout.extend({
@@ -42,7 +43,7 @@ define(
 						this.model.set(name, input.val());
 						console.log(name+" is changed to " + this.model.get(name));
 					},
-					"change select": function(e) {
+					"change select[id!='changeDemo']": function(e) {
 						var input = $(e.target);
 						var name = input.prop("name");
 						this.model.set(name, input.val());
@@ -70,8 +71,6 @@ define(
 					this.model.off(null, null, this);
 					this.region.close();
 				},
-
-
 
 			});
 			return DemoLayout;
