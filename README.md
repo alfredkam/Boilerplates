@@ -2,7 +2,7 @@ Boilerplates
 =============
 These Boilerplates are developed to handle most of the Startup's Web App.  Feel free to check it out, contribute and leave a comment :)
 
-Credits & Co - Developed By<br>
+Co - Developed / Maintained by<br>
 Alfred Kam (@alfredkam) <br>
 Arthur Kam (@arthurkam) <br>
 Rex Kim (@RexK) <br>
