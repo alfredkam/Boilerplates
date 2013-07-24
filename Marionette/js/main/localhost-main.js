@@ -23,7 +23,8 @@ require.config({
 		"flot.pie" : "lib/flot/jquery.flot.pie",
 		"flot.threshold" : "lib/flot/jquery.flot.threshold",
 		"flot.stack" : "lib/flot/jquery.flot.stack",
-		"flot.crosshair" : "lib/flot/jquery.flot.crosshair"
+		"flot.crosshair" : "lib/flot/jquery.flot.crosshair",
+		"moment" : "lib/moment/moment"
 	},
 
 	/*
