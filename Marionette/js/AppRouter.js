@@ -9,12 +9,10 @@ define([
 		$, Backbone, Marionette
 ){	
 	var DashboardRouter = Marionette.AppRouter.extend({
-		
 		appRoutes:{
 			"" : "home",
 			"demo" : "demo"
 		}
 	});
-	
 	return DashboardRouter;
 });

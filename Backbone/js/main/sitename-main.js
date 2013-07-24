@@ -80,10 +80,10 @@ require.config({
 	}
 });
 
-require(["js/util/WebConsoleUtils", "backbone", "js/Router"], function(WebConsoleUtils){
+require(["js/util/WebConsoleUtils", "backbone", "js/Router"], function(WebConsoleUtils, Backbone, Router){
 	
 	//TODO: Starting point
-	var config = window.sitename.getConfig();
+	var config = window[sitename].getConfig();
 	var configDebug = config.DEBUG;
 	
 	//TODO: Choose if you want to follow the current config debug flag, or your own.
