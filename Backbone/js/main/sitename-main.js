@@ -12,9 +12,16 @@ require.config({
 		underscore: "lib/underscore/underscore",
 		backbone: "lib/backbone/backbone",
 		mustache: "lib/mustache/mustache",
-		marionette : "/lib/marionette/marionette.min",
-		"backbone.babysitter" : "/lib/backbone.babysitter/Backbone.babysitter",
-		"backbone.wreqr" : "/lib/backbone.Wreqr/Backbone.Wreqr"
+		marionette : "lib/marionette/marionette.min",
+		"backbone.babysitter" : "lib/backbone.babysitter/Backbone.babysitter",
+		"backbone.wreqr" : "lib/backbone.Wreqr/Backbone.Wreqr",
+		flot : "lib/flot/jquery.flot",
+		"flot.time" : "lib/flot/jquery.flot.time",
+		"flot.pie" : "lib/flot/jquery.flot.pie",
+		"flot.threshold" : "lib/flot/jquery.flot.threshold",
+		"flot.stack" : "lib/flot/jquery.flot.stack",
+		"flot.crosshair" : "lib/flot/jquery.flot.crosshair",
+		"moment" : "lib/moment/moment"
 		//TODO : include others here if you want to use them
 		//"bootstrap" : "/lib/bootstrap/bootstrap.min"
 	},
@@ -41,6 +48,30 @@ require.config({
 		marionette : {
 			deps : ["json", "jquery", "underscore","backbone"],
 			exports : "Marionette"
+		}
+		flot : {
+			deps : [ "json", "jquery" ],
+			exports : "jQuery"
+		},
+		"flot.time" : {
+			deps : [ "json", "jquery", "flot" ],
+			exports : "jQuery"
+		},
+		"flot.crosshair" : {
+			deps : [ "json", "jquery", "flot" ],
+			exports : "jQuery"
+		},
+		"flot.pie" : {
+			deps : [ "json", "jquery", "flot" ],
+			exports : "jQuery"
+		},
+		"flot.threshold" : {
+			deps : [ "json", "jquery", "flot", "flot.time" ],
+			exports : "jQuery"
+		},
+		"flot.stack" : {
+			deps : [ "json", "jquery", "flot", "flot.time", "flot.crosshair" ],
+			exports : "jQuery"
 		}
 		/*
 		bootstrap : {
