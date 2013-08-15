@@ -1,0 +1,5 @@
+{>main_layout/}
+{<content}
+<h1>This is FAQ Page</h1>
+<p>This is FAQ is about {name}</p>
+{/content}

@@ -1,0 +1,5 @@
+{>main_layout/}
+{<content}
+<h1>{title}</h1>
+<p>Welcome to Express : Page {title}</p>
+{/content}
