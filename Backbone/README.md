@@ -2,6 +2,8 @@ Boilerplate - Backbone
 =============
 This boilerplate is a javascript framework for developing heavy lifing web applications.  It is oop friendly, light weight and mvp (minimal viable product) ready.
 
+This is a client side rendering framework.
+
 Credits & Developed By<br>
 Alfred Kam 	  - git: @alfredkam		,	t: @alfredkam <br>
 Myung Sun Kim - git: @Rexk	,	t: @rexkm<br>
