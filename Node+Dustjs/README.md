@@ -7,3 +7,7 @@ This is a server side rendering framework
 
 ## Copyright
 All copyrights are reserved under Appfuel
+
+## for starters
+npm install
+node app.js
