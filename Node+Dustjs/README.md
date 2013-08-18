@@ -8,6 +8,6 @@ This is a server side rendering framework
 ## Copyright
 All copyrights are reserved under Appfuel
 
-## for starters
+## usage
 npm install<br>
 node app.js
