@@ -9,5 +9,5 @@ This is a server side rendering framework
 All copyrights are reserved under Appfuel
 
 ## for starters
-npm install
+npm install<br>
 node app.js
