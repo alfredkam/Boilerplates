@@ -1,15 +1,28 @@
-console.log("Mock Server Starting");
+'use strict'
 
-var http = require("http");
-var request = require("request");
-var express = require("express");
+var http = require("http"),
+    request = require("request"),
+    express = require("express"),
+    path = require('path');
 
 var app = express();
 
-app.use(express.bodyParser());
-app.use(express.cookieParser());
-app.use(express.static('./app')); /* need to indicate the directory you will be serving */
-app.use(express.logger());
+//common configurations
+app.configure(function(){
+    app.use(express.bodyParser());
+    app.use(express.cookieParser());
+    app.use(express.methodOverride());
+});
+
+app.configure('development', function(){
+    app.set('port', process.env.PORT || 3000);
+    app.use(express.logger('dev'));
+    /* need to indicate the directory you will be serving */
+    app.use(express.static('../'));
+    app.use(express.errorHandler());
+});
+
+/* start of mocking routes */
 
 /* Example of mocking http GET */
 app.get("/", function(req, res){
@@ -38,6 +51,9 @@ app.delete("/", function(req, res){
     // using either res.send() or res.json()
     res.json({});
 });
+/* end of mocking routes */
 
-console.log("Listening, by default port 3000");
-app.listen(3000);
+//set server to listen to ...
+http.createServer(app).listen(app.get('port'), function(){
+    console.info('Express server listening on port '+ app.get('port'));
+});

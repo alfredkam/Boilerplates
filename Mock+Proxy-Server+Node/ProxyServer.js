@@ -1,29 +1,28 @@
-console.log("Proxy Server Starting");
+'use strict'
 
-var http = require("http");
-var request = require("request");
-var express = require("express");
+var http = require("http"),
+    request = require("request"),
+    express = require("express"),
+    path = require('path');
 
 var app = express();
 
-app.use(express.bodyParser());
-app.use(express.cookieParser());
-app.use(express.static('./app')); /* need to indicate the directory you will be serving */
-app.use(express.logger());
-
-/* Example of proxy http GET */
-app.get("/", function(req, res){
-    /* proxy your desired response */
-    request("http://localhost:3000/", function(error, response){
-        //returns message back to client
-        if (!error && response.statusCode == 200) {
-            res.json(JSON.parse(body));
-        } else {
-            console.log(error);
-            res.send(error);
-        }
-    });
+//common configurations
+app.configure(function(){
+    app.use(express.bodyParser());
+    app.use(express.cookieParser());
+    app.use(express.methodOverride());
 });
+
+app.configure('development', function(){
+    app.set('port', process.env.PORT || 3000);
+    app.use(express.logger('dev'));
+    /* need to indicate the directory you will be serving */
+    app.use(express.static('../'));
+    app.use(express.errorHandler());
+});
+
+/* start of proxy routes */
 
 /* Example of proxy http POST */
 app.post("/", function(req, res){
@@ -67,5 +66,9 @@ app.delete("/", function(req, res){
     });
 });
 
-console.log("Listening, by default port 3000");
-app.listen(3000);
+/* end of proxy routes */
+
+//set server to listen to ...
+http.createServer(app).listen(app.get('port'), function(){
+    console.info('Express server listening on port '+ app.get('port'));
+});
