@@ -1,0 +1,33 @@
+{
+  "name": "Node+Dustjs",
+  "version": "0.0.0",
+  "main": "app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.0-rc1",
+    "requirejs": "~2.1.9",
+    "json2": "*",
+    "marionette": "~1.2.2",
+    "momentjs": "~2.4.0",
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1",
+    "flot": "~0.8.1",
+    "modernizr": "~2.6.2",
+    "mustache": "~0.7.2",
+    "nprogress": "~0.1.2",
+    "spectrum": "~1.1.1",
+    "underscore": "~1.5.2",
+    "almond": "~0.2.6",
+    "dustjs": "~0.3.0",
+    "requirejs-text": "~2.0.10",
+    "backbone.wreqr": "~0.2.0",
+    "backbone.eventbinder": "~1.0.2",
+    "normalize-css": "~2.1.3"
+  }
+}
