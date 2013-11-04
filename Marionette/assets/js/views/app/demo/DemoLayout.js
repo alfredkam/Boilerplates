@@ -68,7 +68,7 @@ define(
 				onClose : function() {
 
 					this.model.off(null, null, this);
-					this.region.close();
+				//	this.region.close();
 				},
 
 			});
